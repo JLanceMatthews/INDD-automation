@@ -34,12 +34,12 @@ function getData(propertyID, columnName) {
 var doc = app.activeDocument;
 
 // Fetch property ID from the document
-var propertyFrame = doc.textFrames.itemByName("property_id");
+var propertyFrame = doc.textFrames.itemByName("propertyID");
 
 if (propertyFrame.isValid) {
     var propertyID = propertyFrame.contents;
 } else {
-    alert("Error: No text frame found with the name 'property_id'.");
+    alert("Error: No text frame found with the name 'propertyID'.");
     exit();
 }
 
